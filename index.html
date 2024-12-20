@@ -542,7 +542,7 @@
                             <!--button start-->
                             <li class="nav-item header-nav-last-item d-flex align-items-center">
                                 <a href="#" id="flag-switch">
-                                    <img src="assets/img/en.svg" alt="English" id="flag-img"
+                                    <img src="assets/img/in.svg" alt="Indonesia" id="flag-img"
                                         style="width: 30px !important; border: 1px solid silver;">
                                 </a>
                             </li>
@@ -1099,12 +1099,12 @@
                 const flagImg = $('#flag-img');
 
                 // Periksa bendera saat ini dan ubah ke bendera yang lain
-                if (flagImg.attr('src') === 'assets/img/en.svg') {
-                    flagImg.attr('src', 'assets/img/in.svg');
-                    flagImg.attr('alt', 'Indonesia');
-                } else {
+                if (flagImg.attr('src') === 'assets/img/in.svg') {
                     flagImg.attr('src', 'assets/img/en.svg');
                     flagImg.attr('alt', 'English');
+                } else {
+                    flagImg.attr('src', 'assets/img/in.svg');
+                    flagImg.attr('alt', 'Indonesia');
                 }
             });
         });
