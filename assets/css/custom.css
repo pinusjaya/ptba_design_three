@@ -1,0 +1,459 @@
+/* Card Container */
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: start;
+    color: white;
+    cursor: pointer;
+}
+
+/* Background Image */
+.cards::before {
+    content: "";
+    background: url('../img/asset_ptba/img/pembangkit-bukitasam.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: transform 0.8s ease-out;
+    /* Tambahkan transisi */
+
+}
+
+/* Overlay */
+.cards::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Overlay gelap */
+    z-index: 2;
+    transition: transform 0.8s ease-out;
+}
+
+/* Card Content */
+.card-contents {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+
+/* Hover Effect - Zoom */
+.cards:hover::before {
+    transform: scale(1.1);
+    /* Zoom gambar */
+}
+
+/* Hover Effect - Overlay Opacity */
+.cards:hover::after {
+    background: rgba(0, 0, 0, 0.4);
+    /* Kurangi overlay saat hover */
+}
+
+/* Title */
+.card-titles {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.card-subtitles {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Action Button */
+.card-btnd {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+    background: #ffdd57;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    /* transition: background 0.3s; */
+}
+
+.card-btnd:hover {
+    background: #f7c600;
+}
+
+.title-content {
+    margin-bottom: 15px;
+    /* Agar konten terpusat */
+}
+
+.title-content h5 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.title-content h5 span {
+    font-weight: lighter;
+}
+
+.title-content .underline {
+    margin-top: 10px;
+    width: 50px;
+    /* Panjang garis bawah */
+    height: 4px;
+    /* Ketebalan garis bawah */
+    background-color: #E60C17;
+    /* Warna garis bawah */
+    /* Jarak garis bawah dengan teks */
+    border-radius: 2px;
+    /* Opsional: Membuat sudut garis menjadi melengkung */
+}
+
+.container-ind {
+    border-right: 1px solid #f0f0f0;
+    /* Gray border */
+}
+
+.container-ind-no {
+    border-right: none;
+    /* Gray border */
+}
+
+
+.downloads-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.downloads-section h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    /* Biru */
+    margin: 10px 0;
+}
+
+.download-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.download-image {
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.download-details {
+    flex-grow: 1;
+}
+
+.download-details .date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.download-details h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.download-button {
+    background-color: #fff;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.download-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.read-more {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.tabs a.active {
+    /* Warna latar belakang untuk tab aktif */
+    color: #E60C17;
+    font-weight: bold;
+    /* Warna teks untuk tab aktif */
+}
+
+.tabs a {
+    color: black;
+}
+
+.post-sp {
+    display: none;
+    /* Sembunyikan konten secara default */
+}
+
+.post-sp.active {
+    display: block;
+    /* Tampilkan konten aktif */
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.ritz .waffle a {
+    color: inherit
+}
+
+.s5 {
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: middle;
+    direction: ltr;
+    padding: 0 3px 0 3px
+}
+
+.s10 {
+    font-size: 1.1rem;
+    background-color: #edf4fc !important;
+    text-align: left;
+    font-weight: 700;
+    color: #000 !important;
+    vertical-align: middle;
+    direction: ltr;
+    padding: 20px 0px 5px 10px !important
+}
+
+.s2 {
+    border-right: none;
+    background-color: #fff;
+    text-align: left;
+    font-weight: 700;
+    color: #000;
+    font-size: 12pt;
+    vertical-align: middle;
+    direction: ltr;
+    padding: 0 3px 0 3px
+}
+
+.s6 {
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: top;
+    direction: ltr;
+    padding: 0 3px 0 3px
+}
+
+.s7 {
+    background-color: #f29102 !important;
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff !important;
+    font-size: 12pt;
+    vertical-align: middle;
+    direction: ltr;
+    padding: 10px
+}
+
+.s14 {
+    font-size: 1.1rem;
+    background-color: #edf4fc !important;
+    text-align: left;
+    font-weight: 700;
+    color: #000 !important;
+    vertical-align: middle;
+    direction: ltr;
+    padding: 20px 0px 5px 10px !important
+}
+
+.s12 {
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: top;
+    direction: ltr;
+    padding: 0 3px 0 3px;
+    word-break: break-word;
+}
+
+.s4 {
+    border-left: none;
+    border-right: none;
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: top;
+    direction: ltr;
+    padding: 0 3px 0 3px
+}
+
+.s13 {
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: top;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 0 3px 0 3px;
+    word-break: break-word;
+}
+
+.s15 {
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: top;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 0 3px 0 3px
+}
+
+.s8 {
+    font-size: 1.1rem;
+    background-color: #fdf4e5 !important;
+    text-align: center;
+    font-weight: 700;
+    color: #f29102 !important;
+    vertical-align: middle;
+    direction: ltr;
+    padding: 20px 0px 5px 0px !important
+}
+
+.s16 {
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: top;
+    direction: ltr;
+    padding: 0 3px 0 3px;
+    word-break: break-word;
+}
+
+.s17 {
+    background-color: #fff;
+    text-align: left;
+    font-weight: 700;
+    font-style: italic;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 0 3px 0 3px
+}
+
+.s1 {
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: top;
+    direction: ltr;
+    padding: 0 3px 0 3px
+}
+
+.s0 {
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: middle;
+    direction: ltr;
+    padding: 0 3px 0 3px
+}
+
+.s3 {
+    border-left: none;
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+    font-size: 10pt;
+    vertical-align: top;
+    direction: ltr;
+    padding: 0 3px 0 3px
+}
+
+.s11 {
+    font-size: 1.1rem;
+    background-color: #edf4fc !important;
+    text-align: left;
+    font-weight: 700;
+    color: #000 !important;
+    vertical-align: middle;
+    direction: ltr;
+    padding: 20px 0px 5px 10px !important
+}
+
+.s9 {
+    font-size: 1.1rem;
+    background-color: #fdf4e5 !important;
+    text-align: center;
+    font-weight: 700;
+    color: #f29102 !important;
+    vertical-align: middle;
+    direction: ltr;
+    padding: 20px 0px 5px 10px !important
+}
