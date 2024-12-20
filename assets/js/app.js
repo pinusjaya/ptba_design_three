@@ -254,8 +254,8 @@ jQuery(function ($) {
     autoplayHoverPause: true,
     items: 1,
     smartSpeed: 1000,
-    animateOut: "slideOutUp",
-    animateIn: "slideInDown"
+    animateIn: 'fadeIn', // add this
+    animateOut: 'fadeOut',
   }); // 10. hero slider two
 
   $('.hero-content-slider').owlCarousel({
