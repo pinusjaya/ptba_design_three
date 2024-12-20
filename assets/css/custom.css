@@ -498,3 +498,144 @@ hr {
     left: 100%;
     /* Gerakkan efek kaca melintasi gambar */
 }
+
+
+/* Post CSS untuk Konferensi Pers */
+/* Container utama */
+.custom-post {
+    margin: 20px 0;
+    border-radius: 10px;
+    /* Border utama */
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.custom-post-wrapper {
+    display: flex;
+    align-items: stretch;
+    /* Pastikan gambar dan konten memiliki tinggi yang sama */
+}
+
+/* Gambar di kiri */
+.custom-post-image {
+    flex: 0 0 30%;
+    /* Lebar gambar 30% */
+    max-width: 30%;
+    border-right: 1px solid #e1e1e1;
+    /* Border vertikal di sisi kanan gambar */
+}
+
+.custom-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Pastikan gambar menyesuaikan ukuran kotak tanpa distorsi */
+    display: block;
+}
+
+/* Konten di kanan */
+.custom-post-content {
+    flex: 1;
+    /* Sisa lebar digunakan oleh konten */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.custom-post-header h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.custom-post-meta {
+    font-size: 14px;
+    color: #777;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.custom-post-title a {
+    font-size: 22px;
+    color: #5d5d5d;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.custom-post-meta li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.custom-post-more a {
+    display: inline-block;
+    color: #5d5d5d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.custom-post-more a:hover {
+    color: #0056b3;
+}
+
+.custom-post-more i {
+    margin-right: 5px;
+}
+
+/* CSS Table siaran pers */
+/* Table Custom Styling */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-row {
+    border-top: 1px solid #ddd;
+    /* Border atas */
+    border-bottom: 1px solid #ddd;
+    /* Border bawah */
+    transition: background-color 0.3s ease;
+    /* Efek smooth hover */
+}
+
+.custom-row:hover {
+    background-color: #f5f5f5;
+    /* Latar abu-abu saat hover */
+}
+
+/* Highlight Text Styling */
+.custom-row .highlight {
+    color: #007bff;
+    /* Warna biru */
+    font-weight: bold;
+}
+
+/* Button Styling */
+.custom-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    /* Jarak antara ikon dan teks */
+    padding: 6px 12px;
+    /* Warna default tombol */
+    /* Warna teks */
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn i {
+    font-size: 16px;
+    /* Ukuran ikon */
+}
+
+/* .custom-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+} */
