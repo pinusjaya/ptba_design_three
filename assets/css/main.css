@@ -57908,8 +57908,13 @@ section {
 
 /* line 3693, src/assets/scss/custom/_style.scss */
 .post-preview img {
-  border-radius: .1875rem;
+  border-radius: .2875rem;
   width: 100%;
+  height: 250px;
+  object-fit: cover;
+  /* Memastikan gambar tetap proporsional dan terpotong jika perlu */
+  object-position: center;
+  /* Pusatkan gambar jika terpotong */
   display: block;
 }
 

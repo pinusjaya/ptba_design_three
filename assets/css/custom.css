@@ -457,3 +457,44 @@ hr {
     direction: ltr;
     padding: 20px 0px 5px 10px !important
 }
+
+
+.post-preview {
+    position: relative;
+    overflow: hidden;
+    /* Memastikan efek tidak keluar dari area gambar */
+}
+
+.post-preview img {
+    border-radius: .1875rem;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+    /* Efek transisi untuk zoom */
+}
+
+.post-preview::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Mulai di luar area gambar */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.1) 70%);
+    transition: left 0.5s ease-in-out;
+    /* Efek transisi bergerak */
+}
+
+.post-preview:hover img {
+    transform: scale(1.05);
+    /* Zoom sedikit saat hover */
+}
+
+.post-preview:hover::after {
+    left: 100%;
+    /* Gerakkan efek kaca melintasi gambar */
+}
