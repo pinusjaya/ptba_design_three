@@ -4,7 +4,7 @@
     width: 100%;
     height: 100%;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     text-align: start;
@@ -86,7 +86,7 @@
     color: #333;
     background: #ffdd57;
     border: none;
-    border-radius: 5px;
+    border-radius: 16px;
     text-decoration: none;
     cursor: pointer;
     /* transition: background 0.3s; */
@@ -120,7 +120,7 @@
     background-color: #E60C17;
     /* Warna garis bawah */
     /* Jarak garis bawah dengan teks */
-    border-radius: 2px;
+    border-radius: 16px;
     /* Opsional: Membuat sudut garis menjadi melengkung */
 }
 
@@ -140,7 +140,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", serif;
 }
 
 .downloads-section h3 {
@@ -167,7 +167,7 @@
     width: 100px;
     height: 130px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 16px;
 }
 
 .download-details {
@@ -466,7 +466,7 @@ hr {
 }
 
 .post-preview img {
-    border-radius: .1875rem;
+    border-radius: 16px;
     width: 100%;
     height: 250px;
     object-fit: cover;
@@ -504,7 +504,7 @@ hr {
 /* Container utama */
 .custom-post {
     margin: 20px 0;
-    border-radius: 10px;
+    border-radius: 16px;
     /* Border utama */
     overflow: hidden;
     background-color: #fff;
@@ -625,7 +625,7 @@ hr {
     /* Warna teks */
     text-decoration: none;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -639,3 +639,192 @@ hr {
     color: #fff;
     border-color: #007bff;
 } */
+
+.custom-carousel {
+    position: relative;
+}
+
+.custom-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    /* Optional, untuk efek rounded corners */
+}
+
+.custom-card-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-card-image {
+    width: 100%;
+    height: 300px;
+    /* Tetapkan tinggi gambar */
+    object-fit: cover;
+    /* Menjaga proporsi gambar agar tidak gepeng */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    /* Animasi saat hover */
+}
+
+.custom-card-image:hover {
+    transform: scale(1.05);
+    /* Zoom sedikit */
+    filter: blur(3px) brightness(0.8);
+    /* Efek kaca buram */
+}
+
+.custom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Efek kaca transparan */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    /* Efek blur kaca */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-card:hover .custom-overlay {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Tambahkan efek kaca lebih tebal saat hover */
+}
+
+.custom-overlay-inner {
+    text-align: center;
+}
+
+.custom-teacher-field {
+    font-size: 14px;
+    color: #fff;
+}
+
+.posted {
+    border-bottom: none !important;
+}
+
+
+.custom-widget-recent-entries {
+    background-color: #0044cc;
+    /* Biru */
+    color: #ffffff;
+    /* Putih */
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.custom-widget-recent-entries ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-widget-item {
+    margin-bottom: 15px;
+}
+
+.custom-widget-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.news-title {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    flex-grow: 1;
+    transition: color 0.3s ease;
+}
+
+.news-title:hover {
+    color: #ffcc00;
+    /* Kuning untuk efek hover */
+    text-decoration: underline;
+}
+
+.custom-widget-content .post-date {
+    font-size: 14px;
+    color: #cce0ff;
+    margin-left: 10px;
+}
+
+.arrow {
+    font-size: 18px;
+    color: #cce0ff;
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #ffcc00;
+    /* Kuning untuk efek hover */
+}
+
+.custom-offer-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    overflow: hidden;
+    border-radius: 16px;
+    height: 150px;
+    /* aspect-ratio: 21 / 9; */
+    /* Rasio aspek 16:9 */
+}
+
+
+.custom-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-text {
+    z-index: 1;
+    position: relative;
+    color: #FFF;
+}
+
+.custom-hover-light {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    transition: left 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.custom-offer-box:hover .custom-bg-img {
+    transform: scale(1.1);
+}
+
+.custom-offer-box:hover .custom-hover-light {
+    left: 100%;
+}
